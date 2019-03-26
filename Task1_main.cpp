@@ -112,6 +112,11 @@ int main(int argc, char **argv)
 	//Output the running time for finding the LCS
 	fout << "Running Time: " << timeElapsed.count() << " seconds" << endl;
 	PrintDivider(fout, DIVIDER_WIDTH, DIVIDER_CHAR);
+	
+	//Close the input and output files
+	fileX.close();
+	fileY.close();
+	fout.close();
 
 	return 0;
 } // !main

@@ -14,21 +14,6 @@
 #include "HelperFunctions.h"
 
 //------------------------------------------------------------------------------
-//InitializeLCSLenTable: Initializes the first row and column to 0 in the
-//	longest common subsequence length table
-//--------------------------------------
-//	lengthTable:
-//		2-dimensional vector of integers that holds the lengths of longest
-//		common subsequences between two sequences
-//	rows:
-//		The number of rows within lengthTable
-//	columns:
-//		The number of columns within lengthTable
-//------------------------------------------------------------------------------
-void InitializeLCSLenTable(vector<vector<int>>& lengthTable,
-	int rows, int columns);
-
-//------------------------------------------------------------------------------
 //PrintLCS: Prints to the output file a matrix containing the lengths of longest
 //	common subsequences, with the two sequences printed above and to the left
 //	of the matrix

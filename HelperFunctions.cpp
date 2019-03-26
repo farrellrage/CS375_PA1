@@ -5,6 +5,7 @@
 //      PrintDivider
 //      PrintCenteredMessage
 //		max
+//		InitializeLCSLenTable
 //------------------------------------------------------------------------------
 
 #include "HelperFunctions.h"
@@ -59,3 +60,34 @@ int max(int a, int b)
 {
 	return (a > b) ? a : b;
 } // !max
+
+//------------------------------------------------------------------------------
+//InitializeLCSLenTable: Initializes the first row and column to 0 in the
+//	longest common subsequence length table
+//--------------------------------------
+//	lengthTable:
+//		2-dimensional vector of integers that holds the lengths of longest
+//		common subsequences between two sequences
+//	rows:
+//		Integer number of rows within lengthTable
+//	columns:
+//		Integer number of columns within lengthTable
+//------------------------------------------------------------------------------
+void InitializeLCSLenTable(vector<vector<int>>& lengthTable,
+	int rows, int columns)
+{
+	//Index for the FOR loops that zero out the first row and column
+	int i;
+
+	//Zero out the first row in the length table
+	for (i = 0; i <= columns; i++)
+	{
+	lengthTable[0][i] = 0;
+	} // !for
+	
+	//Zero out the first column in the length table
+	for (i = 0; i <= rows; i++)
+	{
+	lengthTable[i][0] = 0;
+	} // !for
+} // !InitializeLCSLenTable

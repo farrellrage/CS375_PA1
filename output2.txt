@@ -1,0 +1,5 @@
+********************************************************************************
+Longest Common Subsequence: Recursive, No Memoization
+LCS length: 1 characters
+Running Time: 2.74e-07 seconds
+********************************************************************************

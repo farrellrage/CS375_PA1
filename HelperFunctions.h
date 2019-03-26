@@ -5,6 +5,7 @@
 //      PrintDivider
 //      PrintCenteredMessage
 //		max
+//		InitializeLCSLenTable
 //------------------------------------------------------------------------------
 #ifndef HelperFunctions_h
 #define HelperFunctions_h
@@ -44,5 +45,20 @@ void PrintCenteredMessage(ofstream& fout, string message, int centerWidth);
 //		Second value that will be compared to
 //------------------------------------------------------------------------------
 int max(int a, int b);
+
+//------------------------------------------------------------------------------
+//InitializeLCSLenTable: Initializes the first row and column to 0 in the
+//	longest common subsequence length table
+//--------------------------------------
+//	lengthTable:
+//		2-dimensional vector of integers that holds the lengths of longest
+//		common subsequences between two sequences
+//	rows:
+//		The number of rows within lengthTable
+//	columns:
+//		The number of columns within lengthTable
+//------------------------------------------------------------------------------
+void InitializeLCSLenTable(vector<vector<int>>& lengthTable,
+	int rows, int columns);
 
 #endif // !HelperFunctions_h
