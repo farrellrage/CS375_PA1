@@ -103,7 +103,6 @@ int main(int argc, char **argv)
 		<< lengthTable[lenX][lenY]
 		<< " characters"
 		<< endl;
-
 	fout << "Running Time: " << timeElapsed.count() << " seconds" << endl;
 	PrintDivider(fout, DIVIDER_WIDTH, DIVIDER_CHAR);
 	

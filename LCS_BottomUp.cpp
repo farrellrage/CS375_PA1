@@ -2,7 +2,6 @@
 //File Name:        LCS_BottomUp.cpp
 //Associated file:  LCS_BottomUp.h
 //Functions:
-//      InitializeLCSLenTable
 //      PrintLCS
 //		LCSBottomUpCase1
 //		LCSBottomUpCase2

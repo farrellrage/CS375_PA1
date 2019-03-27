@@ -1,4 +1,6 @@
-all:	task1 task2 task3
+all:	task1 task2 task3 test1 test2 test3
+
+tasks:	task1 task2 task3
 
 task1:	Task1_main.cpp Main.h LCS_BottomUp.cpp LCS_BottomUp.h HelperFunctions.cpp HelperFunctions.h
 	g++ -g -Wall -o task1 Task1_main.cpp Main.h LCS_BottomUp.cpp LCS_BottomUp.h HelperFunctions.cpp HelperFunctions.h
@@ -9,10 +11,7 @@ task2:	Task2_main.cpp Main.h LCS_RecursiveNoMemoization.cpp LCS_RecursiveNoMemoi
 task3:	Task3_main.cpp Main.h LCS_TopDown.cpp LCS_TopDown.h HelperFunctions.cpp HelperFunctions.h
 	g++ -g -Wall -o task3 Task3_main.cpp Main.h LCS_TopDown.cpp LCS_TopDown.h HelperFunctions.cpp HelperFunctions.h
 
-test:
-	./task1 filex.txt filey.txt output1.txt
-	./task2 filex.txt filey.txt output2.txt
-	./task3 filex.txt filey.txt output3.txt
+tests:	test1 test2 test3
 	
 test1:
 	./task1 filex.txt filey.txt output1.txt
